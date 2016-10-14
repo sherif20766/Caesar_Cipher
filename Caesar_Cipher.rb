@@ -5,7 +5,7 @@ puts "Enter a cipher key:"
 num = gets.chomp.to_i
 
 def back_shift(c)
-  (c.chr.ord - 26). chr
+  (c.ord-25). chr
 end
 
 def func(string, num)
@@ -19,11 +19,14 @@ def func(string, num)
 		end
 	end
 
+	
+
 	letters.each do |x|
 
 		if x.length > 1
-			puts "this letter needs shifting back"
-					
+		
+		x = x.slice!(0)
+
 		end
 	end
 
