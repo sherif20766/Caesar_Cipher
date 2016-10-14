@@ -4,9 +4,6 @@ string = gets.chomp
 puts "Enter a cipher key:"
 num = gets.chomp.to_i
 
-def back_shift(c)
-  (c.ord-25). chr
-end
 
 def func(string, num)
 
